@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spelling Practice</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="fonts" href="../icons-1/icons-1.ttf" type="font/ttf">
+  <script src="../spelling.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <h1 id="logo">logo..?</h1>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#utils">Utilities</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h2>Spelling practice</h2>
+  <ul class="page-tabs">
+    <li class="pgtb" onClick="tab('li')" id="li"><span class="icon">M&nbsp;</span>Lists</li>
+    <li class="pgtb" onClick="tab('le')" id="le"><span class="icon">A&nbsp;</span>Learning</li>
+    <li class="pgtb" onClick="tab('an')" id="an"><span class="icon">G&nbsp;</span>Analytics</li>
+  </ul>
+  <div class="page" id="liPg">
+    <label for="fileInput" class="btn" id="uploadBtn">Upload</label>
+    <input type="file" id="fileInput" accept=".txt" style="display: none;" onchange="parseFile();" />
+    <br />
+    <div class="list">
+      <ul class="list" id="fileList">
+
+      </ul>
+    </div>
+    <p>Upload lists as a .txt file, with each word on its own line. For alternative spellings, use a slash between the
+      words on the same line. To include a sentence with the word, add a colon at the end of the word. Do not add spaces
+      in between symbols, spaces are counted as part of the word or sentence.</p>
+    <p>Example:</p>
+    <code>
+      apple <br/>
+      colour/color <br/>
+      hexagon:A hexagon is a six-sided polygon.<br/>
+    </code>
+  </div>
+  <div class="page" id="lePg">
+    2
+  </div>
+  <div class="page" id="anPg">
+    3
+  </div>
+</body>
+
+</html>
